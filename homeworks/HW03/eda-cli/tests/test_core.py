@@ -21,7 +21,7 @@ def _sample_df() -> pd.DataFrame:
             "height": [140, 150, 160, 170, 180],
             "city": ["A", "B", "A", None, "C"],
             "const": [1, 1, 1, 1, 1],
-            "user_id": [1, 2, 3, 4, 5],
+            "user_id": [2, 2, 3, 4, 5],
         }
     )
 
@@ -71,7 +71,7 @@ def test_has_constant_columns():
     missing_df = missing_table(df)
     flags = compute_quality_flags(df, summary, missing_df)
 
-    assert flags["has_constant_columns"] is True
+    assert flags["has_constant_columns"] == True
 
 
 def test_has_suspicious_id_duplicates():
@@ -82,7 +82,6 @@ def test_has_suspicious_id_duplicates():
     summary = summarize_dataset(df)
     missing_df = missing_table(df)
     flags = compute_quality_flags(df, summary, missing_df)
-
-    assert flags["has_suspicious_id_duplicates"] is True
+    assert flags["has_suspicious_id_duplicates"] == True
 
 

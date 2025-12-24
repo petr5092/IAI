@@ -1,7 +1,8 @@
-# S03 – eda_cli: мини-EDA для CSV
+# HW04 – eda_cli: HTTP-сервис качества датасетов
 
-Небольшое CLI-приложение для базового анализа CSV-файлов.
-Используется в рамках Семинара 03 курса «Инженерия ИИ».
+Небольшое CLI-приложение для базового анализа CSV-файлов с HTTP-сервисом на FastAPI.
+Используется в рамках Семинара 04 курса «Инженерия ИИ».
+Проект опирается на результаты HW03 и переиспользует доработанный eda-cli.
 
 ## Требования
 
@@ -10,7 +11,7 @@
 
 ## Инициализация проекта
 
-В корне проекта (S03):
+В корне проекта (HW04/eda-cli):
 
 ```bash
 uv sync
@@ -67,6 +68,24 @@ uv run eda-cli report data/example.csv --out-dir reports
 ```powershell
 uv run eda-cli report data/example.csv --out-dir reports_example --title "Sales report" --max-hist-columns 4 --top-k-categories 10
 ```
+
+## Запуск API
+
+Для запуска веб-сервиса используйте:
+
+```bash
+uv run uvicorn eda_cli.api:app --reload --port 8000 
+```
+
+
+
+### Доступные эндпоинты
+
+- `GET /health` - Проверка здоровья сервиса
+- `POST /quality` - Оценка качества датасета по агрегированным признакам
+- `POST /quality-from-csv` - Оценка качества по загруженному CSV-файлу
+- `POST /quality-flags-from-csv` - Получение флагов качества по CSV-файлу
+
 
 ## Тесты
 

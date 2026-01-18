@@ -1,0 +1,1 @@
+{"ds1": {"method": "kmeans", "params": {"k": 2}, "criterion": "max silhouette"}, "ds2": {"method": "dbscan", "params": {"eps": 1.5, "min_samples": 3}, "criterion": "max silhouette"}, "ds3": {"method": "kmeans", "params": {"k": 4}, "criterion": "max silhouette"}}

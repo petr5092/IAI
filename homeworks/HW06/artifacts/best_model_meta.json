@@ -1,1 +1,18 @@
-{"best_model": "RandomForest", "params": {"bootstrap": true, "ccp_alpha": 0.0, "class_weight": null, "criterion": "gini", "max_depth": null, "max_features": "sqrt", "max_leaf_nodes": null, "max_samples": null, "min_impurity_decrease": 0.0, "min_samples_leaf": 1, "min_samples_split": 2, "min_weight_fraction_leaf": 0.0, "monotonic_cst": null, "n_estimators": 100, "n_jobs": null, "oob_score": false, "random_state": 42, "verbose": 0, "warm_start": false}, "metrics": {"accuracy": 0.8933333333333333, "f1_macro": 0.8671305820470261, "roc_auc_ovr": 0.9536536604454208}}
+{
+  "best_model_label": "RandomForest",
+  "test_metrics": {
+    "accuracy": 0.8344,
+    "f1": 0.78132552614358,
+    "roc_auc": 0.9277289584171603,
+    "model": "RandomForest"
+  },
+  "search_summary": {
+    "best_params": {
+      "max_depth": null,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1
+    },
+    "best_cv_roc_auc": NaN
+  },
+  "random_state": 42
+}

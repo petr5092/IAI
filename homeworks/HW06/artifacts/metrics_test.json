@@ -1,34 +1,27 @@
 {
-  "results": [
-    {
-      "accuracy": 0.8344,
-      "f1": 0.78132552614358,
-      "roc_auc": 0.9277289584171603,
-      "model": "RandomForest"
-    },
-    {
-      "accuracy": 0.7354666666666667,
-      "f1": 0.6348360350773792,
-      "roc_auc": 0.8756144327525934,
-      "model": "HistGradientBoosting"
-    },
-    {
-      "accuracy": 0.7197333333333333,
-      "f1": 0.6618877363039263,
-      "roc_auc": 0.8467328129950055,
-      "model": "LogReg(scaled)"
-    },
-    {
-      "accuracy": 0.7746666666666666,
-      "f1": 0.7278022394365964,
-      "roc_auc": 0.7985471345673919,
-      "model": "DecisionTree"
-    },
-    {
-      "accuracy": 0.5424,
-      "f1": 0.2344398340248963,
-      "roc_auc": 0.5,
-      "model": "Dummy(most_frequent)"
-    }
-  ]
+  "RandomForest": {
+    "accuracy": 0.8344,
+    "f1": 0.78132552614358,
+    "roc_auc": 0.9277289584171603
+  },
+  "HistGradientBoosting": {
+    "accuracy": 0.7354666666666667,
+    "f1": 0.6348360350773792,
+    "roc_auc": 0.8756144327525934
+  },
+  "LogReg(scaled)": {
+    "accuracy": 0.7197333333333333,
+    "f1": 0.6618877363039263,
+    "roc_auc": 0.8467328129950055
+  },
+  "DecisionTree": {
+    "accuracy": 0.7746666666666666,
+    "f1": 0.7278022394365964,
+    "roc_auc": 0.7985471345673919
+  },
+  "Dummy(most_frequent)": {
+    "accuracy": 0.5424,
+    "f1": 0.2344398340248963,
+    "roc_auc": 0.5
+  }
 }

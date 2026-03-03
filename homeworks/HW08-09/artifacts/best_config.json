@@ -1,0 +1,35 @@
+{
+  "experiment_id": "E4",
+  "dataset": "EMNIST",
+  "dataset_info": "torchvision.EMNIST(split='balanced') (28x28, 47 \u043a\u043b\u0430\u0441\u0441\u043e\u0432)",
+  "seed": 42,
+  "device": "cpu",
+  "model": {
+    "type": "MLP",
+    "input_dim": 784,
+    "num_classes": 47,
+    "hidden_dims": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "dropout_p": 0.3,
+    "use_batchnorm": false
+  },
+  "training": {
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "criterion": "CrossEntropyLoss",
+    "max_epochs": 50,
+    "early_stopping_patience": 4,
+    "early_stopping_min_delta": 0.0005
+  },
+  "results": {
+    "epochs_trained": 25,
+    "best_val_accuracy": 0.7733398452401161,
+    "best_val_loss": 0.7131612040102482,
+    "final_train_accuracy": 0.7483377659574468,
+    "final_train_loss": 0.762061615573599
+  }
+}

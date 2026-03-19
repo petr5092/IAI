@@ -5,4 +5,4 @@ E3,EMNIST,42,"hidden=(256,128) / relu / dropout=0.0 / batchnorm=True",Adam,0.001
 E4,EMNIST,42,"hidden=(256,128) / relu / dropout=0.3 / batchnorm=False + EarlyStopping",Adam,0.001,0.0,0.0,25,0.7733398452401161,0.7131612040102482
 O1,EMNIST,42,"hidden=(256,128) / relu / dropout=0.3 / batchnorm=False",Adam,0.1,0.0,0.0,6,0.13496093731373549,3.580275058746338
 O2,EMNIST,42,"hidden=(256,128) / relu / dropout=0.3 / batchnorm=False",Adam,1e-05,0.0,0.0,6,0.0244140625,3.8551378697156906
-O3,EMNIST,42,"hidden=(256,128) / relu / dropout=0.3 / batchnorm=False",SGD,0.1,0.9,0.0,6,0.64990234375,1.183877781033516
+O3,EMNIST,42,"hidden=(256,128) / relu / dropout=0.3 / batchnorm=False",SGD,0.1,0.9,0.0001,6,0.6506835930049419,1.2000729329884052

@@ -1,7 +1,5 @@
-experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
-C1,classification,STL10,42,SimpleCNN,Adam,0.001,4,0.45,0.43,,,Simple CNN без аугментаций
-C2,classification,STL10,42,SimpleCNN+Aug,Adam,0.001,4,0.52,0.50,,,Simple CNN с аугментациями
-C3,classification,STL10,42,ResNet18-head,Adam,0.001,4,0.68,0.66,,,ResNet18 head-only
-C4,classification,STL10,42,ResNet18-finetune,Adam,0.0001,4,0.72,0.70,,,ResNet18 fine-tuning
-V1,detection,PennFudanPed,42,FasterRCNN,,,,,0.65,0.78,0.52,score_threshold=0.3
-V2,detection,PennFudanPed,42,FasterRCNN,,,,,0.82,0.55,0.58,score_threshold=0.7
+experiment_id,task,dataset,seed,split_summary,window_size,horizon,model_summary,features_summary,scaler,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape,test_mae,test_rmse,test_mape,notes
+B1,forecasting,S12-hw-dataset.csv,42,"70% train, 15% val, 15% test (temporal)",,1,Naive forecast (lag_1),lag_1 only,,,,,6.4434055727554185,8.20353204909296,4.394593960122376,,,,
+B2,forecasting,S12-hw-dataset.csv,42,"70% train, 15% val, 15% test (temporal)",7,1,Moving Average (window=7),rolling_mean_7,,,,,12.723717381689518,15.236325500475134,8.82877937382802,,,,
+B3,forecasting,S12-hw-dataset.csv,42,"70% train, 15% val, 15% test (temporal)",,1,Ridge Regression (alpha=0.001),"lag_1,7,14, rolling_mean_7/14, rolling_std_7/14, dayofweek features",StandardScaler,,,,6.679159711349098,8.160594676300201,4.447209816395029,,,,"alpha=0.001, подбор через поиск"
+R1,forecasting,S12-hw-dataset.csv,42,"70% train, 15% val, 15% test (temporal)",29,1,"GRU (hidden_size=64, num_layers=2)","sequence length=29, 1 feature (target)",StandardScaler,Adam,0.0005,30,5.905413627624512,7.630874122154293,3.956820487976074,7.210580348968506,9.175138084765358,4.6241068840026855,"window_size=29, best val loss=0.1585"

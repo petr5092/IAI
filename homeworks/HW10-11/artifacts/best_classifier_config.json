@@ -1,0 +1,9 @@
+{
+  "dataset": "STL10",
+  "seed": 42,
+  "model_summary": "ResNet18-layer4+fc",
+  "optimizer": "Adam",
+  "lr": "1e-4/1e-3",
+  "epochs_trained": 6,
+  "best_val_accuracy": 0.823
+}

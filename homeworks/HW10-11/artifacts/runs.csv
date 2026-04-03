@@ -1,7 +1,7 @@
 experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,precision,recall,mean_iou,notes,test_accuracy
 C1,classification,STL10,42,SimpleCNN,Adam,0.001,12,0.584,,,,,
 C2,classification,STL10,42,SimpleCNN-aug,Adam,0.001,12,0.595,,,,,
-V1,detection,PennFudanPed,42,fasterrcnn_mobilenet_v3_large_fpn,pretrained,DEFAULT,0,,0.2208750658933996,0.9905437352222446,0.9050894703993608,score_thr=0.3,
-V2,detection,PennFudanPed,42,fasterrcnn_mobilenet_v3_large_fpn,pretrained,DEFAULT,0,,0.408602150537235,0.9881796690283968,0.9051248345530334,score_thr=0.7,
+V1,detection,Pascak VOC,42,fasterrcnn_mobilenet_v3_large_fpn,pretrained,DEFAULT,0,,0.2208750658933996,0.9905437352222446,0.9050894703993608,score_thr=0.3,
+V2,detection,Pascal VOC,42,fasterrcnn_mobilenet_v3_large_fpn,pretrained,DEFAULT,0,,0.408602150537235,0.9881796690283968,0.9051248345530334,score_thr=0.7,
 C3,classification,STL10,42,ResNet18-head-only,Adam,1e-3,3,0.689,,,,,
 C4,classification,STL10,42,ResNet18-layer4+fc,Adam,1e-4/1e-3,6,0.836,,,,,

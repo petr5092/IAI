@@ -1,0 +1,6 @@
+query,before_retrieved_sources,after_retrieved_sources,changed
+Почему overlap полезен при чанкинге?,"doc_03, doc_10, doc_02","doc_11, doc_03, doc_10",True
+Как оценивают качество retrieval?,"doc_04, doc_09, doc_08","doc_04, doc_12, doc_09",True
+Что делать после обновления базы знаний?,"doc_05, doc_02, doc_09","doc_05, doc_12, doc_02",True
+Когда полезен гибридный поиск?,"doc_10, doc_02, doc_01","doc_10, doc_02, doc_01",False
+Зачем нужен реранжировщик после первичного retrieval?,"doc_09, doc_05, doc_04","doc_12, doc_09, doc_05",True

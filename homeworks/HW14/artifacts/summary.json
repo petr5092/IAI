@@ -1,0 +1,11 @@
+{
+  "num_documents": 10,
+  "num_documents_after": 12,
+  "num_chunks": 17,
+  "num_chunks_after": 19,
+  "backend": "TF-IDF (fallback)",
+  "chunk_size": 24,
+  "overlap": 6,
+  "top_k": 3,
+  "hit_at_3_mean": 1.0
+}
